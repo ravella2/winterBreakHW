@@ -1,83 +1,123 @@
-# weekend-js-1
-Long_Weekend covering loops, functions, and datatypes
+![GA logo!!!](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67)
+
+# JavaScript weekend REPS!
+
+Class: wdi-cc<br>
+Type: Homework<br>
+Duration: A few hours<br>
+Created by: GA WDI Instructional staff<br>
+Competencies: Data types, loops, arrays, functions, scope, objects 
+
+---
+
+## Setup
+
+fork/clone/etc -- u know what to do
 
 
-## Conceptual Questions
+## I. Variables & Datatypes
+
+### A. Q + A
 
 1. How do we assign a value to a variable? 
 2. How do we change the value of a variable? 
 3. How do we assign an existing variable to a new variable?
+4. Remind me, what are `declare`, `assign`, and `define`?
+5. What is pseudocoding and why should you do it?
+6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
 
-## Strings
+:red_circle: Commit.
+
+### B. Strings
 
 1. Create a variable called `firstVariable`.
-  - assign it the value of a string => `"Hello World"`
-  - change the value of this variable to a number.
-  - store the value of `firstVariable` into a new variable called `secondVariable` 
-  - change the value of `secondVariable` to a string. 
+  - Assign it the value of the string `"Hello World"`
+  - Change the value of this variable to some number.
+  - Store the value of `firstVariable` in a new variable called `secondVariable` 
+  - Change the value of `secondVariable` to any string. 
   - What is the value of `firstVariable`?
 
-2. Create a variable called `yourName` and set it equal to your name as a string.
-  - Write an expression that takes the string "Hello, my name is " and the variable `yourName` so that it returns a new string with them concatenated. 
+2. Create a variable called `yourName` and set it equal to your name as a string. Then, write an expression that takes the string "Hello, my name is " and the variable `yourName` so that it returns a new string with them concatenated. 
   
 >ex: `Hello, my name is Jean Valjean`
   
-## Booleans
-- Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true. :wave:
+:red_circle: Commit.
 
-```
+### C. Booleans
+- Using the provided variable definitions, replace the blanks so that all log statements print `true` in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print `true` to the console.
+
+```js
   const a = 4;
   const b = 53;
   const c = 57;
   const d = 16;
   const e = 'Kevin';
+
+  console.log(a __ b);
+  console.log(c __ d);
+  console.log('Name' __ 'Name');
+  console.log(true __ false);
+  console.log(false __ false __ false __ false __ false __ false __ true);
+  console.log(false __ false)
+  console.log(e ___ 'Kevin');
+  console.log(a __ b ___ c);
+  console.log(a __ a ___ d);
+  console.log(48 __ '48');
 ```
 
--  a _ b;
--  c _ d;
--  'Name' ___ 'Name';
--  a _ b ___ c;
--  a _ a ___ d;
--  e ___ 'Kevin';
--  48 ___ '48';
+:red_circle: Commit.
 
-...
+### D. The farm
+
+1. Declare a variable `animal`.  Set it to be either "cow" or something else.
+2. Write code that will print out "mooooo" if the it is equal to `cow`.
+3. Change your code so that if the variable `animal` is anything other than a cow, it will print "Hey! You're not a cow."
+4. Commit.
+
+:red_circle: Commit.
 
 
-## The Farm
-1) Write code that will print out "mooooo" if the variable `animal` is equal to `cow`.
+### E. Driver's Ed
 
-2) Change your code so that if the variable `animal` is anything other than a cow, your should print out "Hey! You're not a cow."
+1. Make a variable that will hold a person's age. Be semantic.
 
-## Driver's Ed
+2. Write code that will print out "Here are the keys", if the age is 16 years or older.
 
-1) Write a variable that will hold a person's age.
+3. If the age is younger than 16, a message should print "Sorry, you're too young."
 
-2) Write code that will print out "Here are the keys", if the age is 16 years or older.
+:red_circle: Commit.
 
-3) Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
 
-## Just Loop It
-1) Write code that will print out all the numbers in the range 0 - 10.
+## II. Loops
 
-2) Write code that will print out all the numbers in the range 10 - 4000.
+Remember: **USE `let` when you initialize your for loops!**
 
-3) Write code that will print out every other number in the range 10 - 4000.
+This is GOOD: `for(`**`let i = 0;`**` i < 100; i++)`
 
-## Let's get even
-1) Print out the even numbers that are within the range of 1 - 100.
+This is NO GOOD: `for(i = 0; i < 100; i++)`
 
-2) Adjust your code to add a message next to the even number that says: "is an even number".
+### A. The basics
 
->Example Output:
-```
-2 is an even number
-4 is an even number
-6 is an even number
-```
+1. Write a loop that will print out all the numbers from 0 to 10, inclusive.
 
-## Give me Five
-1) For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
+2. Write a loop that will print out all the numbers from 10 up to and including 400.
+
+3. Write a loop that will print out every third number starting with 12 and going no higher than 4000.
+
+:red_circle: Commit.
+
+### B. Get even
+
+1. Print out the even numbers that are within the range of 1 - 100.
+
+2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+
+:red_circle: Commit.
+
+
+### C. Give me Five
+
+1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
 
 >Example Output:
 ```
@@ -85,7 +125,7 @@ I found a 5. High five!
 I found a 10. High five!
 ```
 
-2) Add to the code from above to print out "I found a `number`. Three is a crowd" if the number is a multiple of three.
+2. Add to the code from above to print out "I found a `number`. Three is a crowd" if the number is a multiple of three.
 
 >Example Output:
 ```
@@ -96,40 +136,70 @@ I found a 9. Three is a crowd
 I found a 10. High five!
 ```
 
-## Savings account
-1) Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
+:red_circle: Commit.
+
+
+### D. Savings account
+
+1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
 
 >Check your work! Your banck_account should have $55 in it.
 
-2) You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 
 >Check your work! Your banck_account should have $10,100 in it.
 
+:red_circle: Commit.
 
-## Multiples of 3 and 5
+
+### E. Multiples of 3 and 5
 
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-Find the sum of all the multiples of 3 or 5 below 1000.
+Find the sum of all the multiples of 3 or 5 below 1000.  If a previous question you've done has helpful bits of code in it that partially solves this problem, look back at them.
 
-:clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1!  
+
+Are you having dejà vu? This just in! From the "Read the entire problem before you start" dept: This problem was on a previous assignment.  You may skip it **if you've already done it**, just include a comment saying that you've already done it. If you've now done the problem twice, perhaps next time you'll read the whole problem before starting it.
+
+:red_circle: Commit.
 
 
+## III. Arrays & Control flow
 
-### Easy Does It
+### A. Talk about it:
+
+1. What are the things in an array called?
+
+2. Do Arrays guarantee those things will be in order?
+
+3. What real-life thing could you model with an array?
+
+:red_circle: Commit.
+
+
+### B. Easy Does It
+
 1. Create an array that contains three quotes and store it in a variable called `quotes`.
 
-### Random
+:red_circle: Commit.
+
+### C. Accessing elements
+
 Given the following array `const randomThings = [1, 10, "Hello", true]`
 
-1. how do you access the 1st element in the array?
+1. How do you access the 1st element in the array?
 
 2. Change the value of `"Hello"` to `"World"`.
 
-3. Check the value of the array to make sure it updated the array.
+3. Check the value of the array to make sure it updated the array.  How?  Why, yes! `console.log()`;
 
-### We've Got Class
-Given the following array `const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]`
+:red_circle: Commit.
+
+
+### D. Change values
+
+Given the following array `const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]`
 
 1. What would you write to access the 3rd element of the array?
 
@@ -137,36 +207,53 @@ Given the following array `const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]
 
 3. Add a new element, "Cloud City" to the array.
 
-### Mix It Up
-4. Given the following array `const myArray = [5 ,10 ,500, 20]`
+:red_circle: Commit.
 
-1. using the `push` method, add the string `"Egon"` to the end of the array.
 
-2. using a method, remove the string from the end of the array.
+### E. Mix It Up
 
-3. using the `unshift` method, add the string `"Bob Marley"` to the beginning of the array
+Given the following array: `const myArray = [5, 10, 500, 20]`
 
-4. using a different method, remove the string from the beginning of the array
+1. Add the string `"Egon"` to the end of the array. Add another string of your choice to the end of the array.
 
-5. use the reverse method on this array
+2. Remove the `5` from the beginning of the array.
 
-### Biggie Smalls
-Write an `if..else` statement:
+3. Add the string `"Bob Marley"` to the beginning of the array.
 
-1. console.log `little number` if the number is entered is less than **100**
+4. Remove the string of your choise from the end of the array.
 
-2. If the number entered is 100 or more, alert `big number`.
+5. Reverse this array using `Array.prototype.reverse()`.  Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything?
 
-### Monkey in the Middle
-Write an `if...else if...else` statement:
+:red_circle: Commit.
 
-1. console.log `little number` if the number entered is less than **5**.<br>
 
-2.  If the number entered is more than 10, log `big number`.
+### F. Biggie Smalls
 
-3. Otherwise, console.log "monkey". <br>
+Create a variable that contains an integer.
 
-### What's in Your Closet?
+Write an `if ... else` statement that:
+
+1. `console.log()`s "little number" if the number is entered is less than **100**
+
+2. `console.log()`s `big number` if the number is greater than or equal to 100.
+
+:red_circle: Commit.
+
+
+### G. Monkey in the Middle
+
+Write an `if ... else if ... else` statement:
+
+1. `console.log()` `little number` if the number entered is less than **5**.<br>
+
+2. If the number entered is more than 10, log `big number`.
+
+3. Otherwise, log "monkey". <br>
+
+:red_circle: Commit.
+
+
+### H. What's in Your Closet?
 
 Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
@@ -205,91 +292,43 @@ const thomsCloset = [
 
 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
 
-2. Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named `kristynShoe`.
+2. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
 
-3. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
+3. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
 
-4. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
+4. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
 
-5. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
+5. In the same way, access one item from Thom's pants array.
 
-6. In the same way, access one item from Thom's pants array.
+6. Access one item from Thom's accessories array.
 
-7. Access one item from Thom's accessories array.
+7. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
 
-8. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
+8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
 
-9. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
-
-
-## Functions
+:red_circle: Commit.
 
 
-### printGreeting
+## IV. Functions
 
-Write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting.
+
+### A. `printGreeting`
+
+Do you think you could write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting?
+
+Like so?
 
 ```javascript
 console.log(printGreeting("Slimer"));
 ```
+> `=> Hello there, Slimer!`
 
-> => Hello there, Slimer!
+You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, **read entire problems carefully before doing them from now on**.  
 
-<br>
-<hr>
-
-### reverseWordOrder
-
-Write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
-
-```javascript
-console.log(reverseWordOrder("Ishmael me Call"));
-```
-
-> => "Call me Ishmael"
+:red_circle: Commit.
 
 
-```
-console.log(reverseWordOrder("I use Lâncome on my comb"));
-```
-
-> => "comb my on Lâncome use I"
-
-
-<br>
-<hr>
-
-### calculate
-
-Write a function called `calculate`.
-
-This function should take three arguments, two numbers and a string.
-
-Name the parameters `num1`, `num2`, and `operation`.
-
-If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
-
-If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
-
-Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
-
-```javascript
-console.log(calculate(4, 3, "sub"));
-
-=> 1
-```
-
-```javascript
-console.log(calculate(4, 3, "exp"));
-
-=> 64
-```
-
-<br>
-<hr>
-
-
-# 1 
+### B. `printCool`
 
 Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
 
@@ -297,9 +336,12 @@ Write a function `printCool` that accepts one parameter, `name` as an argument. 
 console.log(printCool("Captain Reynolds"));
 ```
 
-> => "Captain Reynolds is cool";
+> `=> "Captain Reynolds is cool";`
 
-# 2
+:red_circle: Commit.
+
+
+### C. `calculateCube`
 
 Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 
@@ -309,42 +351,48 @@ console.log(calculateCube(5));
 
 > => 125
 
+:red_circle: Commit.
 
-# 3
 
-Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+### D. `isVowel`
+
+Write a function `isVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
 
 ```javascript
-console.log(isAVowel("a"));
+console.log(isVowel("a"));
 ```
 
-> => true
+> `=> true`
+
+:red_circle: Commit.
 
 
-# 4
+### E. `getTwoLengths`
 
 Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
 
 ```javascript
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 ```
+> `=> [4, 13]`
 
-> => [4, 13]
+:red_circle: Commit.
 
 
-# 5 
+### F. `getMultipleLengths`
 
 Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
-
 
 ```javascript
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 ```
 
-> => [5, 4, 2, 2, 4]
+> `=> [5, 4, 2, 2, 4]`
+
+:red_circle: Commit.
 
 
-# 6
+### G. `maxOfThree`
 
 Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
 
@@ -354,8 +402,10 @@ console.log(maxOfThree(6, 9, 1));
 
 > => 9
 
+:red_circle: Commit.
 
-# 7
+
+### H. `printLongestWord`
 
 Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
@@ -363,10 +413,12 @@ Write a function `printLongestWord` that accepts a single argument, an **array**
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 ```
 
-> => "Peanutbutter"
+> `=> "Peanutbutter"`
+
+:red_circle: Commit.
 
 
-# 8
+### I. `transmogrify`
 
 Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
 
@@ -378,95 +430,138 @@ power of 2` is 225.
 ```javascript
 console.log(transmogrify(5, 3, 2));
 ```
+> `=> 225`
 
-> => 225
+:red_circle: Commit.
 
 
+### J. `reverseWordOrder` v2
 
-### Objects
+**Without using `.split()`, `.reverse()`, or `.join()`,** write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation. 
 
-## Syntax
+See if you can do it without googling.
 
-List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
-
-Example:
-
+Remember: Jim showed you today that you can index directly into a string: 
+```js
+"hello world"[6]
 ```
-{} curly braces define the object.
-```
+> `=> "w"`
 
-<br>
-<hr>
-
-## Me
-
-1. Create an empty object called `me`.<br>
-2. Assign it properties for **name**, **age**, and **email** with corresponding values.<br>
-
-The object would look something like this if we console logged it:
+That and basic loops and variables and arrays are all you need to solve this without the Array methods.
 
 ```javascript
-console.log(me);
+console.log(reverseWordOrder("Ishmael me Call"));
 ```
+> `=> "Call me Ishmael"`
 
-> => {name: "Kristyn", age: 98, email: "kristyn@foo.bar"}
+```js
+console.log(reverseWordOrder("I use Lâncome on my comb"));
+```
+> `=> "comb my on Lâncome use I"`
+
+:red_circle: Commit.
 
 
-3. Using dot notation, access the **name** property in your object.<br>
-4. Without writing directly into the object, update the value of **age** to be 1000 years old.<br>
-5. Using dot notation, verify that **age** has been updated.<br>
-6. Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
-6. Access the value of "place of residence"<br>
+## Objects
 
-<br>
-<hr>
+Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
 
-## Slimer
+### A. Make a user object
+
+1. Create an object called `user`.
+2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
+
+:red_circle: Commit.
+
+### B. Update the user
+
+1. Our user has changed his or her email address. Without changing the original `user` object, update the `email` value to a new email address.
+2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`
+
+:red_circle: Commit.
+
+
+### C. Adding keys and values
+
+You have decided to add your user's location to the data that you want to collect.
+
+1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
+
+:red_circle: Commit.
+
+
+### D. Shopaholic!
+
+1. Our user has purchased an item! They have purchased some "carbohydrates". Using `.push()`, add the string "carbohydrates" to the `purchased` array.
+2. Our user has purchased an item! They have purchased some "peace of mind". Using `.push()`, add the string "peace of mind" to the `purchased` array.
+3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using `.push()`, add the string "Merino jodhpurs" to the `purchased` array.
+4. Console.log just the "Merino jodhpurs" from the `purchased` array.
+
+:red_circle: Commit.
+
+
+### E. Object-within-object
+
+Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
+
+If we want to give our user a `friend` with a `name` and `age`, we could write:
 
 ```javascript
-const monster = {
-   name: "Slimer",
-   color: "greenish",
-   type: "plasm or ghost or something"
+user.friend = {
+    name: "Grace Hopper",
+    age: 85
 }
 ```
 
-* Given the **slimer** object:
-    - What would you write to access the `name` and console.log it?
-    - What would you write to change the `type` to 'creature' (without changing it inside the object)
-    - What would you write to add a key to the object called `age`, and set the age to 6?
-    - console.log the object to make sure `type` is creature, and `age` is 6
+When we console.log `user`, we would see the `friend` object added to our user object.
+
+1. Write a `friend` object into your `user` object and give the friend a name, age, location, and purchased array (empty for now)
+2. Console.log just the friend's name
+3. Console.log just the friend's location
+4. CHANGE the friend's age to 55
+5. The `friend` has purchased "The One Ring". Use `.push()` to add "The One Ring" to the friend's `purchased` array.
+6. The `friend` has purchased "A latte". Use `.push()` to add "A latte" to the friend's `purchased` array.
+7. Console.log just "A latte" from the friend's `purchased` array.
+
+:red_circle: Commit.
+
+
+### F. Loops
+
+1. Write a _for loop_ that iterates over the User's `purchased` array (NOT the friend's purchased array), and prints each element to the console.
+2. Write a _for loop_ that iterates over the Friend's `purchased` array, and prints each element to the console.
+
+:red_circle: Commit.
+
+
+### G. Functions can operate on objects
+
+1. Write a single function `updateUser` that takes no parameters. When the function is run, it should:
+
+  - it should increment the user's age by 1
+  - make the user's name uppercase
+
+  The function does not need a `return` statement, it will merely modify the user object.
+
+2. Write a function `oldAndLoud` that performs the exact same tasks as `updateUser`, but instead of hard-coding it to only work on our `user` object, make it take a parameter `person`, and have it modify the object that is passed in as an argument when the function is called. Call your `oldAndLoud` function with `user` as the argument. 
+
+
+:red_circle: Commit.
+
+
 
 <br>
 <hr>
 
-## Ogres
-
-Let's say you want to make an adventure game where you are an adventurer and you are going to fight **ogres**.
-
-Using **objects**, create **models** and have them interact.
-
-* how would you model your `adventurer`? Your adventurer will want a **name** and **hitpoints**. What else would your adventurer need?
-* how would you model an `ogre`? Your ogre will want **hitpoints**.
-
-* Write a very small program that will simulate a battle between your adventurer and an ogre. 
-	* When your adventurer's hitpoints reach 0 the game is over.
-	* When your ogre's hitpoints reach 0 the game is over.
-
-* If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
-
-<br>
-<hr>
-
-# EXTRA STUFF
+# Hungry for More?
 
 ## Cat Combinator
 
 ### 1. Mama cat
 * Define an object called `cat1` that contains the following properties:
-	* name
-	* breed
-	* age (a number)
+    * name
+    * breed
+    * age (a number)
 
 * console.log the cat's age
 * console.log the cat's breed
@@ -474,9 +569,9 @@ Using **objects**, create **models** and have them interact.
 
 ### 2. Papa cat
 * Define an object called `cat2` that also contains the properties:
-	* name
-	* breed
-	* age (a number)
+    * name
+    * breed
+    * age (a number)
 
 
 ### 3. Combine Cats!
@@ -508,10 +603,10 @@ combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 
 <br>
 
 * Make it so the `combineCats` function will return a combination of the two incoming cats
-	* The result should be an object wherein the
-		* name is a concatenation of the parents' names
-		* the age is 1
-		* the breed is each of the parents' breeds with a hyphen in between
+    * The result should be an object wherein the
+        * name is a concatenation of the parents' names
+        * the age is 1
+        * the breed is each of the parents' breeds with a hyphen in between
 
 Example:
 
@@ -530,7 +625,7 @@ Result:
 
 ## 4. Cat brain bender
 
-If `catCombinator` returns an **object**, and if `catCombinator` takes **objects** as **arguments**, then it stands to reason that:
+If `combineCats` returns an **object**, and if `combineCats` takes **objects** as **arguments**, then it stands to reason that:
 
 `catCombinator` can use **itself** as its own argument.
 
@@ -551,32 +646,4 @@ The above console.log is **two levels** deep of combineCats.
 Your output should look something like:
 
 ![](https://i.imgur.com/zuTzm5X.png)
-
-<br>
-<hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
