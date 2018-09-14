@@ -461,6 +461,16 @@ console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 :red_circle: Commit.
 
+### K. Get down and dirty with `Math.random()`
+
+1.  Write a function that will return a random integer between 1 and 10. Test it.
+2.  Write a function that will return a random integer between 10 and 100. Test it.
+3.  Write a function that will return a random number between 532 and 13267. Test it.
+4.  Write a function that will return a random number between 1 and 10. Test it.
+5.  Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array.  Call your function a few times, passing in the quotes array.  Give it a nice semantic name like `getRandomElement`.
+
+:red_circle: Commit.
+
 
 ## Objects
 
