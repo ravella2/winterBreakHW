@@ -19,11 +19,24 @@ fork/clone/etc -- u know what to do
 ### A. Q + A
 
 1. How do we assign a value to a variable? 
-2. How do we change the value of a variable? 
+
+2. How do we change the value of a variable?
+
+
 3. How do we assign an existing variable to a new variable?
+
+
 4. Remind me, what are `declare`, `assign`, and `define`?
+
+
+
 5. What is pseudocoding and why should you do it?
+
+
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+
+
+
 
 :red_circle: Commit.
 
@@ -36,9 +49,14 @@ fork/clone/etc -- u know what to do
   - Change the value of `secondVariable` to any string. 
   - What is the value of `firstVariable`?
 
+
+
+
 2. Create a variable called `yourName` and set it equal to your name as a string. Then, write an expression that takes the string "Hello, my name is " and the variable `yourName` so that it returns a new string with them concatenated. 
   
 >ex: `Hello, my name is Jean Valjean`
+
+
   
 :red_circle: Commit.
 
