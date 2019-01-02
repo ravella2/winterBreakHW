@@ -400,7 +400,7 @@ thomsCloset[1][2] = "Footie Pajamas"
 ## IV. Functions
 
 
-// ### A. `printGreeting`
+### A. `printGreeting`
 
 // Do you think you could write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting?
 
@@ -416,7 +416,7 @@ thomsCloset[1][2] = "Footie Pajamas"
 // :red_circle: Commit.
 
 
-// ### B. `printCool`
+### B. `printCool`
 
 // Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
 
@@ -426,10 +426,14 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 // > `=> "Captain Reynolds is cool";`
 
+function printCool(name) {
+  console.log(`${name} is cool.`)
+}
+
 // :red_circle: Commit.
 
 
-// ### C. `calculateCube`
+### C. `calculateCube`
 
 // Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 
@@ -439,10 +443,15 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 // > => 125
 
+function calculateCube(number) {
+  console.log(number ** 3)
+}
+
+
 // :red_circle: Commit.
 
 
-// ### D. `isVowel`
+### D. `isVowel`
 
 // Write a function `isVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
 
@@ -452,10 +461,23 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 // > `=> true`
 
+function isVowel(character) {
+  var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  for (let i=0; i < vowels.length; i++) {
+    if (character == vowels[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+console.log(isVowel("a"))
+
 // :red_circle: Commit.
 
 
-// ### E. `getTwoLengths`
+### E. `getTwoLengths`
 
 // Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
 
@@ -464,7 +486,12 @@ thomsCloset[1][2] = "Footie Pajamas"
 // ```
 // > `=> [4, 13]`
 
-// :red_circle: Commit.
+function getTwoLengths(string1, string2) {
+  length1= string1.length;
+  length2 = string2.length;
+  console.log([length1, length2])
+}
+
 
 
 // ### F. `getMultipleLengths`
@@ -476,6 +503,8 @@ thomsCloset[1][2] = "Footie Pajamas"
 // ```
 
 // > `=> [5, 4, 2, 2, 4]`
+
+
 
 // :red_circle: Commit.
 
@@ -650,93 +679,3 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 // <br>
 // <hr>
-
-// # Hungry for More?
-
-// ## Cat Combinator
-
-// ### 1. Mama cat
-// * Define an object called `cat1` that contains the following properties:
-//     * name
-//     * breed
-//     * age (a number)
-
-// * console.log the cat's age
-// * console.log the cat's breed
-
-
-// ### 2. Papa cat
-// * Define an object called `cat2` that also contains the properties:
-//     * name
-//     * breed
-//     * age (a number)
-
-
-// ### 3. Combine Cats!
-
-// The cats are multiplying!
-
-// Write a function `combineCats` that has two parameters `mama`, and `papa`. The function will take two arguments -- each a cat object.
-
-// * Pass `cat1` and `cat2` as arguments to the `combineCats` function. The function should console.log them.
-
-// Example:
-
-// ```javascript
-// combineCats(cat1, cat2)
-// ```
-
-// > { name: "Joe", age: 19, breed: "Mog" }
-
-// > { name: "Jam", age: 45, breed: "Siamese" }
-
-
-// **This is to demonstrate that functions can take objects as arguments**
-
-// You could also invoke the `combineCats` function by writing the objects straight into the parentheses:
-
-// ```javascript
-// combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" });
-// ```
-// <br>
-
-// * Make it so the `combineCats` function will return a combination of the two incoming cats
-//     * The result should be an object wherein the
-//         * name is a concatenation of the parents' names
-//         * the age is 1
-//         * the breed is each of the parents' breeds with a hyphen in between
-
-// Example:
-
-// ```javascript
-// console.log(combineCats(cat1, cat2));
-// ```
-
-// Result:
-
-// ![](https://i.imgur.com/CEB2ire.png)
-
-// **This is to demonstrate that a function can return an object**
-
-// <br>
-// <hr>
-
-// ## 4. Cat brain bender
-
-// If `combineCats` returns an **object**, and if `combineCats` takes **objects** as **arguments**, then it stands to reason that:
-
-// `catCombinator` can use **itself** as its own argument.
-
-// Take a second to stew on that . . .
-
-// What is the result of:
-
-// ```javascript
-// console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
-// ```
-
-// Whoa . . .
-
-// The above console.log is **two levels** deep of combineCats.
-
-// * Write a console.log that is **three levels** deep of combineCats. combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
