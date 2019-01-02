@@ -179,7 +179,9 @@ You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1!
 
 Are you having dejà vu? This just in! From the "Read the entire problem before you start" dept: This problem was on a previous assignment.  You may skip it **if you've already done it**, just include a comment saying that you've already done it. If you've now done the problem twice, perhaps next time you'll read the whole problem before starting it.
 
-:red_circle: Commit.
+
+
+
 
 
 ## III. Arrays & Control flow

@@ -20,7 +20,7 @@ var variable2 = variable1
 
 
 
-// ### B. Strings
+### B. Strings
 
 // 1. Create a variable called `firstVariable`.
 //   - Assign it the value of the string `"Hello World"`
@@ -42,45 +42,48 @@ value of firstVariable is 3
 // >ex: `Hello, my name is Jean Valjean`
 
 var yourName = "rachele";
-"Hello, my name is " + yourName
+console.log("Hello, my name is " + yourName);
 
 // :red_circle: Commit.
 
-// ### C. Booleans
+### C. Booleans
 // - Using the provided variable definitions, replace the blanks so that all log statements print `true` in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print `true` to the console.
 
-// ```js
-//   const a = 4;
-//   const b = 53;
-//   const c = 57;
-//   const d = 16;
-//   const e = 'Kevin';
+  const a = 4;
+  const b = 53;
+  const c = 57;
+  const d = 16;
+  const e = 'Kevin';
 
-//   console.log(a __ b);
-//   console.log(c __ d);
-//   console.log('Name' __ 'Name');
-//   console.log(true __ false);
-//   console.log(false __ false __ false __ false __ false __ false __ true);
-//   console.log(false __ false)
-//   console.log(e ___ 'Kevin');
-//   console.log(a __ b ___ c);
-//   console.log(a __ a ___ d);
-//   console.log(48 __ '48');
-// ```
+  console.log(a < b);
+  console.log(c > d);
+  console.log('Name' == 'Name');
+  console.log(true != false);
+  console.log(false == false == false == false == false == false == true);
+  console.log(false === false)
+  console.log(e === 'Kevin');
+  console.log(a + b == c);
+  console.log(a * a == d);
+  console.log(48 == '48');
 
-// :red_circle: Commit.
 
-// ### D. The farm
+### D. The farm
 
 // 1. Declare a variable `animal`.  Set it to be either "cow" or something else.
 // 2. Write code that will print out "mooooo" if the it is equal to `cow`.
 // 3. Change your code so that if the variable `animal` is anything other than a cow, it will print "Hey! You're not a cow."
 // 4. Commit.
 
-// :red_circle: Commit.
+var animal = "cow";
+if (animal == "cow") {
+  console.log("moo");
+}
+else {
+  console.log("hey, youre not a cow");
+};
 
 
-// ### E. Driver's Ed
+### E. Driver's Ed
 
 // 1. Make a variable that will hold a person's age. Be semantic.
 
@@ -88,37 +91,58 @@ var yourName = "rachele";
 
 // 3. If the age is younger than 16, a message should print "Sorry, you're too young."
 
-// :red_circle: Commit.
+var personAge = 42;
+if (personAge >= 16) {
+  console.log("here are the keys")
+}
+else {
+  console.log("sorry, youre too young")
+};
 
 
-// ## II. Loops
+## II. Loops
 
-// Remember: **USE `let` when you initialize your for loops!**
-
-// This is GOOD: `for(`**`let i = 0;`**` i < 100; i++)`
-
-// This is NO GOOD: `for(i = 0; i < 100; i++)`
-
-// ### A. The basics
+### A. The basics
 
 // 1. Write a loop that will print out all the numbers from 0 to 10, inclusive.
 
+for (let i=0; i < 11; i++) {
+  console.log(i);
+}
+
 // 2. Write a loop that will print out all the numbers from 10 up to and including 400.
+
+for (let i=10; i <= 400; i++) {
+  console.log(i);
+}
 
 // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000.
 
-// :red_circle: Commit.
+for (let i=12; i <= 4000; i++) {
+  if (i % 3 == 0) {
+    console.log(i)
+  }
+}
 
-// ### B. Get even
+### B. Get even
 
 // 1. Print out the even numbers that are within the range of 1 - 100.
+for (let i = 1; i <=100; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
 
 // 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+for (let i = 1; i <=100; i++) {
+  if (i % 2 == 0) {
+    console.log(i + " is an even number.");
+  }
+}
 
-// :red_circle: Commit.
 
 
-// ### C. Give me Five
+### C. Give me Five
 
 // 1. For the numbers 0 - 100, print out "I found a `number`. High five!" if the number is a multiple of five.
 
@@ -127,8 +151,22 @@ var yourName = "rachele";
 // I found a 5. High five!
 // I found a 10. High five!
 // ```
+for (let i = 0; i<=100; i++) {
+  if (i % 5 == 0) {
+    console.log("I found a " + i + ". High five!");
+  }
+}
 
 // 2. Add to the code from above to print out "I found a `number`. Three is a crowd" if the number is a multiple of three.
+
+for (let i = 0; i<=100; i++) {
+  if (i % 3 === 0){
+    console.log("I found a " + i + ". Three's a crowd");
+  }
+  else if (i % 5 === 0) {
+    console.log("I found a " + i + ". High five!");
+  }
+}
 
 // >Example Output:
 // ```
@@ -139,23 +177,32 @@ var yourName = "rachele";
 // I found a 10. High five!
 // ```
 
-// :red_circle: Commit.
 
 
-// ### D. Savings account
+### D. Savings account
 
 // 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called `bank_account`.
+
+var bank_account = 0;
+for (let i = 0; i <=10; i++) {
+  bank_account += i
+}
+console.log(bank_account);
 
 // >Check your work! Your banck_account should have $55 in it.
 
 // 2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 
+var bank_account = 0;
+for (let i = 0; i <=100; i++) {
+  bank_account += i * 2
+}
+console.log(bank_account);
+
 // >Check your work! Your banck_account should have $10,100 in it.
 
-// :red_circle: Commit.
 
-
-// ### E. Multiples of 3 and 5
+### E. Multiples of 3 and 5
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
@@ -165,85 +212,105 @@ var yourName = "rachele";
 
 // Are you having dejà vu? This just in! From the "Read the entire problem before you start" dept: This problem was on a previous assignment.  You may skip it **if you've already done it**, just include a comment saying that you've already done it. If you've now done the problem twice, perhaps next time you'll read the whole problem before starting it.
 
-// :red_circle: Commit.
+var sum = 0;
+for (i=0; i < 1000; i++){
+  if (i % 3 === 0 || i % 5 === 0) {
+    sum += i;
+  }
+}
+console.log(sum)
 
 
-// ## III. Arrays & Control flow
+## III. Arrays & Control flow
 
-// ### A. Talk about it:
+### A. Talk about it:
 
 // 1. What are the things in an array called?
+element
 
 // 2. Do Arrays guarantee those things will be in order?
+no
 
 // 3. What real-life thing could you model with an array?
+a list of fruit
 
-// :red_circle: Commit.
 
 
-// ### B. Easy Does It
+### B. Easy Does It
 
 // 1. Create an array that contains three quotes and store it in a variable called `quotes`.
 
-// :red_circle: Commit.
+var quotes = ["Surely you can't be serious.", "No, I've been nervous lots of times", "Looks like I picked the wrong week to quit sniffing glue"]
 
-// ### C. Accessing elements
+### C. Accessing elements
 
 // Given the following array `const randomThings = [1, 10, "Hello", true]`
 
 // 1. How do you access the 1st element in the array?
+randomThings[0];
 
 // 2. Change the value of `"Hello"` to `"World"`.
+randomThings[2] = "World";
 
 // 3. Check the value of the array to make sure it updated the array.  How?  Why, yes! `console.log()`;
 
-// :red_circle: Commit.
+console.log(randomThings);
 
 
-// ### D. Change values
+### D. Change values
 
 // Given the following array `const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]`
 
 // 1. What would you write to access the 3rd element of the array?
+ourClass[2];
 
 // 2. Change the value of "Github" to "Octocat"
+ourClass[4] = "Octocat";
 
 // 3. Add a new element, "Cloud City" to the array.
+ourclass.push("Cloud City");
 
-// :red_circle: Commit.
 
-
-// ### E. Mix It Up
+### E. Mix It Up
 
 // Given the following array: `const myArray = [5, 10, 500, 20]`
 
 // 1. Add the string `"Egon"` to the end of the array. Add another string of your choice to the end of the array.
+myArray.push("Egon")
+myArray.push("hello")
 
 // 2. Remove the `5` from the beginning of the array.
+myArray.shift()
 
 // 3. Add the string `"Bob Marley"` to the beginning of the array.
+myArray.unshift("Bob Marley")
 
 // 4. Remove the string of your choise from the end of the array.
-
+myArray.pop()
 // 5. Reverse this array using `Array.prototype.reverse()`.  Did you mutate the array? What does _mutate_ mean? Did the `.reverse()` method return anything?
+myArray.reverse()
 
-// :red_circle: Commit.
 
 
-// ### F. Biggie Smalls
+### F. Biggie Smalls
 
 // Create a variable that contains an integer.
+var number = 5;
 
 // Write an `if ... else` statement that:
 
 // 1. `console.log()`s "little number" if the number is entered is less than **100**
+if (number < 100) {
+  console.log('little number')
+}
 
 // 2. `console.log()`s `big number` if the number is greater than or equal to 100.
+else (number >= 100) {
+  console.log("big number")
+}
 
-// :red_circle: Commit.
 
-
-// ### G. Monkey in the Middle
+### G. Monkey in the Middle
 
 // Write an `if ... else if ... else` statement:
 
@@ -253,12 +320,19 @@ var yourName = "rachele";
 
 // 3. Otherwise, log "monkey". <br>
 
-// :red_circle: Commit.
+if (number < 5) {
+  console.log("little number")
+}
+else if (number > 10) {
+  console.log("big number")
+} else {
+  console.log("monkey")
+}
 
 
-// ### H. What's in Your Closet?
+### H. What's in Your Closet?
 
-// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+// Below, we've given you examples of Kristyn  and Thom's closets modeled as data in JavaScript.
 
 // ```javascript
 // const kristynsCloset = [
@@ -295,24 +369,35 @@ var yourName = "rachele";
 
 // 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
 
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
+
 // 2. Kristyn just bought some sweet shades! Add `"raybans"` to her closet **after `"yellow knit hat"`.**
+kristynsCloset.splice(6,0, "raybans")
 
 // 3. Kristyn spilled coffee on her hat... modify this item to read `"stained knit hat"` instead of yellow.
+kristynsCloset[5] = "stained knit hat"
 
 // 4. Put together an outfit for Thom! Using **bracket notation**, access the first element in Thom's `shirts` array.
 
+var shirt = thomsCloset[0][0]
+
 // 5. In the same way, access one item from Thom's pants array.
 
+var pants = thomsCloset[1][0]
+
 // 6. Access one item from Thom's accessories array.
+var accessory = thomsCloset[2][1]
 
 // 7. Log a sentence about what Thom's wearing. Example: `"Thom is looking fierce in a grey button-up, jeans and wool scarf!"`
 
+console.log("Thom is looking fierce in a " + shirt + ", " + pants + ", and " + accessory + "!")
+
 // 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
 
-// :red_circle: Commit.
+thomsCloset[1][2] = "Footie Pajamas"
 
 
-// ## IV. Functions
+## IV. Functions
 
 
 // ### A. `printGreeting`
