@@ -504,6 +504,11 @@ function getTwoLengths(string1, string2) {
 
 // > `=> [5, 4, 2, 2, 4]`
 
+function getMultipleLengths(arrayOfStrings) {
+  var arrayOfLength = [];
+
+}
+
 
 
 // :red_circle: Commit.
@@ -519,6 +524,18 @@ function getTwoLengths(string1, string2) {
 
 // > => 9
 
+function maxOfThree(num1, num2, num3) {
+  if (num1>=num2 && num1>=num3){
+    return(num1);
+  }
+  else if (num2>=num1 && num2>=num3) {
+    return(num2);
+  }
+  else {
+    return(num3)
+  }
+};
+
 // :red_circle: Commit.
 
 
@@ -531,6 +548,10 @@ function getTwoLengths(string1, string2) {
 // ```
 
 // > `=> "Peanutbutter"`
+
+function printLongestWord {
+
+}
 
 // :red_circle: Commit.
 
@@ -548,6 +569,10 @@ function getTwoLengths(string1, string2) {
 // console.log(transmogrify(5, 3, 2));
 // ```
 // > `=> 225`
+
+function transmorgrify(num1, num2, num3) {
+  return(num1 * num2) ** num3
+}
 
 // :red_circle: Commit.
 
@@ -576,15 +601,34 @@ function getTwoLengths(string1, string2) {
 // ```
 // > `=> "comb my on Lâncome use I"`
 
+function reverseWordOrder(string) {
+
+}
+
 // :red_circle: Commit.
 
 // ### K. Get down and dirty with `Math.random()`
 
 // 1.  Write a function that will return a random integer between 1 and 10. Test it.
+function randomInteger() {
+
+}
 // 2.  Write a function that will return a random integer between 10 and 100. Test it.
+function randomInteger() {
+
+}
 // 3.  Write a function that will return a random number between 532 and 13267. Test it.
+
+function randomInteger() {
+
+}
 // 4.  Write a function that will return a random number between 1 and 10. Test it.
+function randomInteger() {
+
+}
 // 5.  Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array.  Call your function a few times, passing in the quotes array.  Give it a nice semantic name like `getRandomElement`.
+
+
 
 // :red_circle: Commit.
 
@@ -598,12 +642,23 @@ function getTwoLengths(string1, string2) {
 // 1. Create an object called `user`.
 // 2. Write in to the object the key-value pairs for `name`, `email`, `age`, and `purchased`. Set the value of `purchased` to an empty array `[]`. Set the other values to whatever you would like.
 
+var user = {
+  name: "rachele",
+  email: "rachele.avella@gmail.com",
+  age: 28,
+  purchased: []
+}
+
 // :red_circle: Commit.
 
 // ### B. Update the user
 
 // 1. Our user has changed his or her email address. Without changing the original `user` object, update the `email` value to a new email address.
+
+user.email = "rachelebelle@gmail.com"
 // 2. Our user has had a birthday! Without changing the original `user` object, increment the `age` value using the postfix operator. Hint: `age++`
+
+user.age++
 
 // :red_circle: Commit.
 
@@ -614,15 +669,22 @@ function getTwoLengths(string1, string2) {
 
 // 1. Without changing the original `user` object, add a new key `location` to the object, and give it a value or some-or-other location (a string).
 
+user.location = "Redwood City";
+
 // :red_circle: Commit.
 
 
 // ### D. Shopaholic!
 
 // 1. Our user has purchased an item! They have purchased some "carbohydrates". Using `.push()`, add the string "carbohydrates" to the `purchased` array.
+
+user.purchased.push("carbohydrates");
 // 2. Our user has purchased an item! They have purchased some "peace of mind". Using `.push()`, add the string "peace of mind" to the `purchased` array.
+user.purchased.push("peace of mind");
 // 3. Our user has purchased an item! They have purchased some "Merino jodhpurs". Using `.push()`, add the string "Merino jodhpurs" to the `purchased` array.
+user.purchased.push("Merino jodhpurs");
 // 4. Console.log just the "Merino jodhpurs" from the `purchased` array.
+console.log(user.purchased[2]);
 
 // :red_circle: Commit.
 
@@ -643,13 +705,25 @@ function getTwoLengths(string1, string2) {
 // When we console.log `user`, we would see the `friend` object added to our user object.
 
 // 1. Write a `friend` object into your `user` object and give the friend a name, age, location, and purchased array (empty for now)
-// 2. Console.log just the friend's name
-// 3. Console.log just the friend's location
-// 4. CHANGE the friend's age to 55
-// 5. The `friend` has purchased "The One Ring". Use `.push()` to add "The One Ring" to the friend's `purchased` array.
-// 6. The `friend` has purchased "A latte". Use `.push()` to add "A latte" to the friend's `purchased` array.
-// 7. Console.log just "A latte" from the friend's `purchased` array.
 
+user.friend = {
+  name: "Daniel",
+  age: 28,
+  location: "redwood city",
+  purchased: []
+}
+// 2. Console.log just the friend's name
+console.log(user.friend.name);
+// 3. Console.log just the friend's location
+console.log(user.friend.location);
+// 4. CHANGE the friend's age to 55
+user.friend.age = 55;
+// 5. The `friend` has purchased "The One Ring". Use `.push()` to add "The One Ring" to the friend's `purchased` array.
+user.friend.purchased.push("The One Ring");
+// 6. The `friend` has purchased "A latte". Use `.push()` to add "A latte" to the friend's `purchased` array.
+user.friend.purchased.push("A latte");
+// 7. Console.log just "A latte" from the friend's `purchased` array.
+console.log(user.friend.purchased[1]);
 // :red_circle: Commit.
 
 
